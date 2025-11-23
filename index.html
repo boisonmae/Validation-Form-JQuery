@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registration-form">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Paper Plane Logo">
+            </div>
+            <h2>Student Registration Form</h2>
+            <p>Please complete the form below:</p>
+
+            <div class="section-title">Personal Information</div>
+            <div class="form-wrapper">
+                <!-- Left Side -->
+                <div class="left-side">
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter Last Name">
+                        <span class="error" id="last-name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter First Name">
+                        <span class="error" id="first-name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Middle Name</label>
+                        <input type="text" id="middle-name" placeholder="Enter Middle Name">
+                        <span class="error" id="middle-name-error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Extended Name</label>
+                        <input type="text" id="ext-name" placeholder="Enter Extended Name">
+                        <span class="error" id="ext-name-error"></span>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="input-group">
+                        <label>Birthdate</label>
+                        <input type="date" id="birthdate">
+                        <span class="error" id="birthdate-error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select id="gender">
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <span class="error" id="gender-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Contact Number</label>
+                        <input type="text" id="contact-number" placeholder="09123456789">
+                        <span class="error" id="contact-number-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="example@email.com">
+                        <span class="error" id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Home Address</label>
+                        <input type="text" id="home-address" placeholder="Enter Home Address">
+                        <span class="error" id="home-address-error"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Academic Information</div>
+            <div class="form-wrapper">
+                <!-- Left Side -->
+                <div class="left-side">
+                    <div class="input-group">
+                        <label>Student Number</label>
+                        <input type="text" id="student-number" placeholder="Enter Student Number">
+                        <span class="error" id="student-number-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Program</label>
+                        <input type="text" id="program" placeholder="Enter Program">
+                        <span class="error" id="program-error"></span>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="input-group">
+                        <label>Year Level</label>
+                        <input type="text" id="year-level" placeholder="Enter Year Level">
+                        <span class="error" id="year-level-error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Section</label>
+                        <input type="text" id="section" placeholder="Enter Section">
+                        <span class="error" id="section-error"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="agree-terms">
+                <label for="agree-terms">I agree to the Terms and Conditions and acknowledge the Privacy Policy</label>
+                <span class="error" id="terms-error"></span>
+            </div>
+            <button type="submit" id="submit-btn">
+                Submit Registration
+            </button>
+            <div id="loading" style="display:none;">
+                <i class="fas fa-spinner fa-spin"></i> Submitting...
+            </div>
+            <div id="success-message" style="display:none; color:green;">
+                Registration Completed Successfully!
+            </div>
+        </form>
+        <footer class="form-footer">
+            <p>Credits: SignGirlyDevelopers Julian & Rika</p>
+        </footer>
+    </div>
+
+    // jQuery CDN
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
